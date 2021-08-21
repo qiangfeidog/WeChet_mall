@@ -1,0 +1,22 @@
+<SearchInput></SearchInput>
+<Tabs tabConfig='{{tabConfig}}' bindtabItemClick="tabItemClick">
+		<view>
+				<block wx:if="{{tabConfig[0].isShow}}">
+						<view class="firstTab">
+								<navigator class="goodsList" wx:for="{{goods}}" wx:key="goods_id" url="/pages/goods_detail/index?goods_id={{item.goods_id}}">
+										<!-- 左边图片 -->
+										<view class="leftImg">
+												<image class="image" src="{{item.goods_big_logo?item.goods_big_logo:'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fwww.360gov.cn%2Fpublic%2Fnoimg.png&refer=http%3A%2F%2Fwww.360gov.cn&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1632013571&t=6331d14de6f6072194a82a8f712c1582'}}" mode="widthFix"></image>
+										</view>
+										<!-- 右边文字 -->
+										<view class="rightFont">
+												<view class="goodsName">{{item.goods_name}}</view>
+												<view class="goodsPrice">¥{{item.goods_price}}</view>
+										</view>
+								</navigator>
+						</view>
+				</block>
+				<block wx:if="{{tabConfig[1].isShow}}">1</block>
+				<block wx:if="{{tabConfig[2].isShow}}">2</block>
+		</view>
+</Tabs>

@@ -1,0 +1,29 @@
+.firstTab .goodsList {
+  display: flex;
+  border-bottom: 1px solid #ccc;
+}
+.firstTab .goodsList .leftImg {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.firstTab .goodsList .leftImg .image {
+  width: 70%;
+}
+.firstTab .goodsList .rightFont {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.firstTab .goodsList .rightFont .goodsName {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+.firstTab .goodsList .rightFont .goodsPrice {
+  color: var(--themeColor);
+  font-size: 32rpx;
+}

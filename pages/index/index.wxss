@@ -1,0 +1,40 @@
+.swiper {
+  width: 750rpx;
+  height: 320rpx;
+}
+.swiper image {
+  width: 100%;
+}
+.category {
+  display: flex;
+}
+.category .navigator {
+  flex: 1;
+}
+.category .navigator image {
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+}
+.floor .floor_group {
+  margin-top: 10px;
+}
+.floor .floor_group .footer_title {
+  margin-top: 10px;
+  float: left;
+  width: 100%;
+}
+.floor .floor_group .footer_body_group {
+  margin-top: 10px;
+}
+.floor .floor_group .footer_body_group .navigator {
+  float: left;
+  width: 33.33%;
+}
+.floor .floor_group .footer_body_group .navigator:nth-last-child(-n+4) {
+  height: 27.72711207vw;
+}
+.floor .floor_group .footer_body_group .navigator .image {
+  width: 100%;
+  height: 100%;
+}

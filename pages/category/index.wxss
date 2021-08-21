@@ -1,0 +1,56 @@
+page {
+  height: 100%;
+}
+.category {
+  height: 100%;
+}
+.category .cateConter {
+  height: calc(100vh - 90rpx);
+  display: flex;
+}
+.category .cateConter .left {
+  flex: 2;
+}
+.category .cateConter .left .active {
+  color: red;
+}
+.category .cateConter .left .menuItem {
+  display: flex;
+  height: 80rpx;
+  justify-content: center;
+  align-items: center;
+  font-size: 30rpx;
+  border-bottom: 1px solid #cccccc;
+  border-right: 2px solid var(--themeColor);
+}
+.category .cateConter .right {
+  width: 100%;
+  flex: 5;
+}
+.category .cateConter .right .rightContest {
+  width: 100%;
+}
+.category .cateConter .right .rightContest .title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80rpx;
+}
+.category .cateConter .right .rightContest .title .a {
+  color: #cccccc;
+}
+.category .cateConter .right .rightContest .title .tit {
+  padding: 0 10rpx;
+}
+.category .cateConter .right .rightContest .goodList {
+  display: flex;
+  flex-wrap: wrap;
+}
+.category .cateConter .right .rightContest .goodList .contentItem {
+  display: block;
+  text-align: center;
+  width: 33.3%;
+}
+.category .cateConter .right .rightContest .goodList .contentItem .image {
+  width: 50%;
+}

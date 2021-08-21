@@ -1,0 +1,12 @@
+@import "./style/icon.wxss";
+page,view,text,swiper,swiper-item,image,navigator{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+page{
+  /* 定义主题颜色 */
+  --themeColor:#FF8040;
+  /* 统一定义字体大小，假设设计稿大小是375px，1px=2rpx,14px的默认字体大小 */
+  font-size: 28rpx;
+}

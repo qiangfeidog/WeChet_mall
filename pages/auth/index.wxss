@@ -1,0 +1,14 @@
+/* pages/auth/index.wxss */
+.power .btn {
+  color: green;
+  border: 1px solid green;
+  margin: 20rpx auto;
+}
+.power .unsupport {
+  color: red;
+  font-size: 30rpx;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  padding: 30rpx;
+}

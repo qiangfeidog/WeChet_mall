@@ -1,0 +1,1 @@
+<button class="button" type="primary" bindtap="getUserProfile">登陆</button>

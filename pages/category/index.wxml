@@ -1,0 +1,25 @@
+<view class="category">
+		<SearchInput></SearchInput>
+		<view class="cateConter">
+				<scroll-view scroll-y class="left">
+						<view class="menuItem" wx:for="{{leftMenus}}" wx:key="*this" bindtap="menuItemClick" data-index="{{index}}">
+								<view class="{{currentIndex===index?'active':''}}">{{item}}</view>
+						</view>
+				</scroll-view>
+				<scroll-view scroll-y class="right" scroll-top="{{scrollTop}}">
+						<view wx:key="cat_id" wx:for="{{rightContent}}" wx:for-item="item1" wx:for-index="index1" class="rightContest">
+								<view class="title">
+										<view class="a">/</view>
+										<view class="tit">{{item1.cat_name}}</view>
+										<view class="a">/</view>
+								</view>
+								<view class="goodList">
+										<navigator class="contentItem" url="/pages/goods_list/index?cid={{item2.cat_id}}" wx:for="{{item1.children}}" wx:key="cat_id" wx:for-item="item2" wx:for-index="index2">
+												<image class="image" src="{{item2.cat_icon}}" mode="widthFix"></image>
+												<view>{{item2.cat_name}}</view>
+										</navigator>
+								</view>
+						</view>
+				</scroll-view>
+		</view>
+</view>

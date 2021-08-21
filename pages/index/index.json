@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "购物项目",
+  "usingComponents": {
+    "SearchInput": "../../components/SearchInput/SearchInput"
+  }
+}

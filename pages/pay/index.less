@@ -1,0 +1,119 @@
+/* pages/pay/index.wxss *//* pages/cart/index.wxss */
+.cart {
+
+	.getAddress {
+		margin-top: 20rpx;
+		border: 1px solid green;
+		padding: 20rpx 50rpx;
+		color: green;
+	}
+	.address {
+		padding: 20rpx 10rpx;
+		border-bottom: 1px solid var(--themeColor);
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		.left {
+			flex: 5;
+		}
+		.right {
+			flex: 2;
+		}
+	}
+	.cart-content {
+		.title {
+			font-size: 40rpx;
+			padding: 20rpx 10rpx;
+			color: var(--themeColor);
+			font-weight: bold;
+			border-bottom: 1px solid #cccccc;
+		}
+	.image {
+		width: 100%;
+	}
+		.content {
+			border-bottom: 2px solid #cccccc;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			.btn {
+	      flex: 1;
+			}
+	
+			.image_wrap {
+	    flex: 2;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+				image {
+					width: 80%;
+				}
+			}
+	
+			.right_content {
+	     flex: 4;
+       height: 100%;
+				.text {
+					display: -webkit-box;
+					overflow: hidden;
+					-webkit-box-orient: vertical;
+					-webkit-line-clamp: 2;
+					color: #666;
+				}
+	
+				.price_wrap {
+					padding-top: 30rpx;
+					height: 100%;
+					width: 100%;
+					display: flex;
+					justify-content: space-between;
+					align-items: center;
+					.price {
+						color: red;
+						font-weight:700;
+					}
+					.select {	
+						display: flex;
+						justify-content: center;
+			      align-items: center;
+						margin-right: 10rpx;
+						.context {
+							padding: 0 20rpx;
+						}
+					}
+				}
+			}
+		}
+	}
+	.footer {
+		position: fixed;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		display: flex;
+		border-top: 1px solid #eeecec;
+		.total_price {
+			text-align:right;
+			flex: 5;
+			
+			 padding-right: 20rpx;
+			.price {
+				font-weight: bold;
+	     color: var(--themeColor);
+			 
+			}
+		}
+	
+		.pay {
+			display: flex;
+						justify-content: center;
+			      align-items: center;
+						font-size:35rpx;
+						font-weight: 600;
+			background-color: red;
+			color: #ffff;
+			flex: 2;
+	
+		}
+	}
+}

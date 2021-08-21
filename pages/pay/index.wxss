@@ -1,0 +1,108 @@
+/* pages/pay/index.wxss */
+/* pages/cart/index.wxss */
+.cart .getAddress {
+  margin-top: 20rpx;
+  border: 1px solid green;
+  padding: 20rpx 50rpx;
+  color: green;
+}
+.cart .address {
+  padding: 20rpx 10rpx;
+  border-bottom: 1px solid var(--themeColor);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.cart .address .left {
+  flex: 5;
+}
+.cart .address .right {
+  flex: 2;
+}
+.cart .cart-content .title {
+  font-size: 40rpx;
+  padding: 20rpx 10rpx;
+  color: var(--themeColor);
+  font-weight: bold;
+  border-bottom: 1px solid #cccccc;
+}
+.cart .cart-content .image {
+  width: 100%;
+}
+.cart .cart-content .content {
+  border-bottom: 2px solid #cccccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cart .cart-content .content .btn {
+  flex: 1;
+}
+.cart .cart-content .content .image_wrap {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cart .cart-content .content .image_wrap image {
+  width: 80%;
+}
+.cart .cart-content .content .right_content {
+  flex: 4;
+  height: 100%;
+}
+.cart .cart-content .content .right_content .text {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  color: #666;
+}
+.cart .cart-content .content .right_content .price_wrap {
+  padding-top: 30rpx;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.cart .cart-content .content .right_content .price_wrap .price {
+  color: red;
+  font-weight: 700;
+}
+.cart .cart-content .content .right_content .price_wrap .select {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10rpx;
+}
+.cart .cart-content .content .right_content .price_wrap .select .context {
+  padding: 0 20rpx;
+}
+.cart .footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  border-top: 1px solid #eeecec;
+}
+.cart .footer .total_price {
+  text-align: right;
+  flex: 5;
+  padding-right: 20rpx;
+}
+.cart .footer .total_price .price {
+  font-weight: bold;
+  color: var(--themeColor);
+}
+.cart .footer .pay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 35rpx;
+  font-weight: 600;
+  background-color: red;
+  color: #ffff;
+  flex: 2;
+}

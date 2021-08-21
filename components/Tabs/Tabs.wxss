@@ -1,0 +1,18 @@
+
+.tabs {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-bottom: 1px solid #ccc;
+
+}
+.tabItems {
+
+	text-align: center;
+	padding: 10rpx 0rpx;
+	flex: 1;
+}
+.active {
+	color: red;
+	border-bottom: 2px solid var(--themeColor);
+}

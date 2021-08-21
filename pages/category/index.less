@@ -1,0 +1,60 @@
+page {
+	height: 100%;
+}
+.category {
+	height: 100%;
+
+	.cateConter {
+	  height: ~'calc(100vh - 90rpx)';
+		display: flex;
+		.left{
+			.active {
+				color: red;
+			}
+			.menuItem {
+				display: flex;
+				height:80rpx;
+				justify-content: center;
+				align-items: center;
+				font-size: 30rpx;
+				border-bottom: 1px solid #cccccc;
+				border-right: 2px solid var(--themeColor);
+			}
+			flex: 2;
+		}
+		.right{
+			width: 100%;
+			flex: 5;
+			.rightContest{
+				width: 100%;
+				.title{
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					height: 80rpx;
+					.a {
+						color: #cccccc;
+					}
+					.tit {
+						padding: 0 10rpx;
+					}
+				}
+				.goodList{
+					display: flex;
+					flex-wrap: wrap;
+					.contentItem{
+						display: block;
+						text-align: center;
+							width: 33.3%;
+							.image {
+								width: 50%;
+							}
+					}
+				}
+			  
+
+			}
+		
+		}
+	}
+}
